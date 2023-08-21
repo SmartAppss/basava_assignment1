@@ -9,6 +9,7 @@ def depo(depo_amunt):
     
 
     print( depo_amunt )
+    return depo_amount
 
 def witd(depo_amunt):
     
@@ -17,14 +18,14 @@ def witd(depo_amunt):
     depo_amunt = depo_amunt - y
      
     print("balence is :",depo_amunt)
+    return depo_amount
 
 def bal(depo_amunt):
     b =  depo_amunt
     print (b)
+    return depo_amount
     
-def ext():
-    e = exit
-    print(e)
+
 
 while True:
     print("01.deposit\n","02.withdrow\n","03.balence\n","04.exit")
@@ -32,15 +33,17 @@ while True:
     x1 = int(input("select any one:"))
 
     if x1==1:
-        
+        data1  =witd(depo_amunt)
+        depo_amunt = data1
         depo(depo_amunt)
 
     elif x1==2:
-        witd(depo_amunt)
+        data1  =witd(depo_amunt)
+        depo_amunt = data1
     elif x1 == 3:
         bal(depo_amunt)        
     elif x1 == 4:
-        ext()
+        break
             
         
         
