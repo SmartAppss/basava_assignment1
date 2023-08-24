@@ -38,10 +38,12 @@ print(arg(1,1,2,5,4,7,4,4))
 print(x1)"""      
 
 
-x  = [3,4,5,6]
+x  = [4,5,6]
+
 y = set(x)
-for i in x:
- if i in y:
-    print("not unique")
- else:
-    print("unique")    
+#print(y)
+#for i in x:
+if len(x)== len(y):
+    print(" unique")
+else:
+    print("not unique") 
