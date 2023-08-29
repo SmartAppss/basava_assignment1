@@ -8,5 +8,21 @@ data.sort()
 result = data[-3::]
 print(result)
 
+def myFun(**kwargs):
+	for key, value in kwargs.items():
+		print("%s==%s" %(key, value))
+
+
+# Driver code
+
+myFun(x =1,y=2)
+
+
+list = [2,"hello",1,"hi", 2,"well come"]
+
+
+x = " ".join(map(str,list))
+print(x) 
+
 
 

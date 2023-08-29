@@ -4,12 +4,12 @@
 #z = x.index("l")
 #print(z)
 x = input("enter the sentence:")
-li = [ ]
+#li = [ ]
 s = x.split( )
 for i in s:
         z = i[ :: -1]
-        li.append(z)
-print(" ".join(li))
+        #li.append(z)
+        print(" ".join(z),end = "  ")
 #--------------------------------- 
 #x2  = (x[ 4:0:-1])
 

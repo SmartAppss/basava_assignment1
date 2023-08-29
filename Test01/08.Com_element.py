@@ -9,6 +9,8 @@ def comm(a,b):
     else: 
         print("no comman words")
 
-a  = (1,2,3,4,6,5)
-b = (7,8,5,3,4,6)
-comm(a,b) 
+a  = (14,7,12,8,6,2)
+b = (9,5,4,3,7,1)
+ 
+print(any(ele in a for ele in b))
+
