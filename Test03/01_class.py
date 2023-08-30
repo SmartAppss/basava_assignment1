@@ -3,15 +3,17 @@
 
 class clac:
 
-    def add(x1,y):
+    def add(self,x1,y):
         x = x1+y
         return x
-    def sub(x1,y):
+    def sub(self,x1,y):
         y = x1-y
         return y
-    def mul(x1,y):
+    def mul(self,x1,y):
         z = x1*y
         return z
+    
+obj  = clac()
 
 while True:
  print("01:add,02:sub,03:mul")
@@ -20,11 +22,11 @@ while True:
  y = int(input("enter the number:"))
 
  if x2 ==1:
-    print(clac.add(x1,y))
+    print(obj.add(x1,y))
  elif x2==2:
-    print(clac.sub(x1,y))  
+    print(obj.sub(x1,y))  
  elif x2==3:
-    print(clac.mul(x1,y))
+    print(obj.mul(x1,y))
 
 
 
