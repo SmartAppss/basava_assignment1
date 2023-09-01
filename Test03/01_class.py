@@ -24,7 +24,7 @@ while True:
  if x2 ==1:
     print(obj.add(x1,y))
  elif x2==2:
-    print(obj.sub(x1,y))  
+    print(obj.sub(x1,y))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
  elif x2==3:
     print(obj.mul(x1,y))
 
