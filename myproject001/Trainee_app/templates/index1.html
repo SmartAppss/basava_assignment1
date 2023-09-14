@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+    <h1 style="text-align: center;">Tranee Data</h1>
+
+    <table style="width:100%">
+    <tr>
+        <th>Emp_Name</th>
+        <th>Emp_ID</th>
+        <th>DOJ</th>
+        <th>Training_Duration</th>
+        <th>Experience</th>
+    </tr>
+    {% for i in Datas %}
+    <tr>
+        <td>{{i.EmpName}}</td>
+        <td>{{i.EmpID}}</td>
+        <td>{{i.DOJ}}</td>
+        <td>{{i.TrainingDuration}}</td>
+        <td>{{i.Experience}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
